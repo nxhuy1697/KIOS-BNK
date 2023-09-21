@@ -1,0 +1,89 @@
+<div class="container-fluid p-4">
+  <h1>Add a new member</h1>
+  <div class="row">
+    <div class="col-12">
+      <div class="p-2">
+        <!-- Form  -->
+        <h4>Employee Infomations</h4>
+        <form [formGroup]="form">
+          <div class="row">
+            <label class="col-sm-4 col-md-6 col-lg-5 col-xl-2 col-form-label"
+              >Username</label
+            >
+            <div class="col-sm-7 col-md-6 col-lg-7 col-xl-4">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="username"
+                formControlName="username"
+              />
+            </div>
+            <label class="col-sm-4 col-md-6 col-lg-5 col-xl-2 col-form-label"
+              >Name</label
+            >
+            <div class="col-sm-7 col-md-6 col-lg-7 col-xl-4">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Name"
+                formControlName="Name"
+              />
+            </div>
+            <label
+              class="col-sm-4 col-md-6 col-lg-5 col-xl-2 col-form-label mt-2"
+              >Email</label
+            >
+            <div class="col-sm-7 col-md-6 col-lg-7 col-xl-4">
+              <input
+                type="text"
+                class="form-control mt-2"
+                placeholder="Email"
+                formControlName="email"
+              />
+            </div>
+            <label
+              class="col-sm-4 col-md-6 col-lg-5 col-xl-2 col-form-label mt-2"
+              >Password</label
+            >
+            <div class="col-sm-7 col-md-6 col-lg-7 col-xl-4">
+              <input
+                type="text"
+                class="form-control mt-2"
+                placeholder="Password"
+                formControlName="password"
+              />
+            </div>
+            <label
+              class="col-sm-4 col-md-6 col-lg-5 col-xl-2 col-form-label mt-2"
+              >Phone</label
+            >
+            <div class="col-sm-7 col-md-6 col-lg-7 col-xl-4">
+              <input
+                type="text"
+                class="form-control mt-2"
+                placeholder="phone"
+                formControlName="phone"
+              />
+            </div>
+            <!-- <label class="col-sm-4 col-md-6 col-lg-5 col-xl-2 col-form-label mt-2"
+              >Role</label
+            >
+            <div class="col-sm-7 col-md-6 col-lg-7 col-xl-4">
+              <input type="text" class="form-control mt-2" placeholder="phone"  formControlName="Phone" />
+            </div> -->
+          </div>
+        </form>
+        <div class="row pt-3">
+          <div class="col-4 text-left">
+            <button class="btn btn-danger" type="button" (click)="closeModal()">
+              <i class="fas fa-times-circle mr-1"></i>Cancel
+            </button>
+            <button class="btn btn-primary" type="button" (click)="submit()">
+              <i class="fas fa-check mr-1"></i>Create
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

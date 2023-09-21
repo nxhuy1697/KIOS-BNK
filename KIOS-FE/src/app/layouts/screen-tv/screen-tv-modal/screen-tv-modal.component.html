@@ -1,0 +1,71 @@
+<div class="container-fluid p-4">
+  <h1>Choose your service</h1>
+  <div class="row">
+    <div class="col-12">
+      <div class="p-2">
+        <!-- Form  -->
+        <h4>Please fill in the form</h4>
+        <form [formGroup]="form">
+          <div class="row">
+            <label class="col-sm-4 col-md-6 col-lg-5 col-xl-2 col-form-label"
+              >Full Name</label
+            >
+            <div class="col-sm-7 col-md-6 col-lg-7 col-xl-4">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Full name"
+                formControlName="name"
+              />
+            </div>
+            <label class="col-sm-4 col-md-6 col-lg-5 col-xl-2 col-form-label"
+              >Phone Number</label
+            >
+            <div class="col-sm-7 col-md-6 col-lg-7 col-xl-4">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Phone"
+                formControlName="phone"
+              />
+            </div>
+            <label
+              class="col-sm-4 col-md-6 col-lg-5 col-xl-2 col-form-label mt-2"
+              >Servce</label
+            >
+            <div class="col-sm-7 col-md-6 col-lg-7 col-xl-4">
+              <select class="form-select d-100" formControlName="serviceId" >
+                <option selected>Open this select menu</option>
+                <option value="1"> Transfer Money</option>
+                <option value="2">Credit Card</option>
+                <option value="3">Primary Card</option>
+              </select>
+            </div>
+            <!-- <label class="col-sm-4 col-md-6 col-lg-5 col-xl-2 col-form-label"
+          >Booth No.</label
+        >
+        <div class="col-sm-7 col-md-6 col-lg-7 col-xl-4">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Booth Number"
+            formControlName="booth"
+          />
+        </div> -->
+          </div>
+          
+        </form>
+        <div class="row pt-3">
+          <div class="col-4 text-left">
+            <button class="btn btn-danger" type="button" (click)="closeModal()">
+              <i class="fas fa-times-circle mr-1"></i>Cancel
+            </button>
+            <button class="btn btn-primary" type="button" (click)="submit()">
+              <i class="fas fa-check mr-1"></i>Create
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
